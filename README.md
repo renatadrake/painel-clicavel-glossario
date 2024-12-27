@@ -1,0 +1,1 @@
+# painel-clicavel-glossario
