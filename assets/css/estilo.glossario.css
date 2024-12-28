@@ -1,64 +1,63 @@
 /****************************************************************************/
 /******************************* Estilo capa *******************************/
 /**************************************************************************/
-html, body{
-    height: 100%;
-
+html,
+body {
+  height: 100%;
 }
 
-
 .btn.btn-lg.btn-capa {
-    background-color: #8786b0;
-    border: 3px solid #000000;
-    border-radius: 32px;
-    width: 50%;
-    font-size: 205%;
-    color: #293653;
-    text-transform: uppercase;
-    font-weight: bold;
-    box-shadow: 5px 3px 8px -1px rgb(70, 70, 70);
+  background-color: #8786b0;
+  border: 3px solid #000000;
+  border-radius: 32px;
+  width: 50%;
+  font-size: 205%;
+  color: #293653;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 5px 3px 8px -1px rgb(70, 70, 70);
 }
 
 .btn.btn-lg.btn-capa:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .p-capa {
-    font-size: 20px;
-    color: #333;
+  font-size: 20px;
+  color: #333;
 }
 
 /**************************************************************************/
 /***************************** Estilo lupas ******************************/
 /************************************************************************/
 .sem-fundo {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .lupa1 {
-    left: 15%;
-    top: 15%;
-    width: 9%;
+  left: 15%;
+  top: 15%;
+  width: 9%;
 }
 
 .lupa2 {
-    right: 15%;
-    top: 15%;
-    width: 9%;
+  right: 15%;
+  top: 15%;
+  width: 9%;
 }
 
 .lupa3 {
-    left: 15%;
-    bottom: 15%;
-    width: 9%;
+  left: 15%;
+  bottom: 15%;
+  width: 9%;
 }
 
 .lupa4 {
-    right: 15%;
-    bottom: 15%;
-    width: 9%;
+  right: 15%;
+  bottom: 15%;
+  width: 9%;
 }
 
 /****************************************************************************/
@@ -66,20 +65,20 @@ html, body{
 /**************************************************************************/
 
 .btn-menu.sem-fundo.position-absolute.botao-animado {
-    top: 10px;
-    left: 20px;
-  }
+  top: 10px;
+  left: 20px;
+}
 
 .modal-header.menuzinho {
-    background-color: #374568;
-    color: white;
-    text-transform: uppercase;
+  background-color: #374568;
+  color: white;
+  text-transform: uppercase;
 }
 
 .estilo-menu {
-    text-align: left !important;
-    background-color: #8786b0 !important;
-    border: 2px solid black !important;
+  text-align: left !important;
+  background-color: #8786b0 !important;
+  border: 2px solid black !important;
 }
 
 /****************************************************************************/
@@ -87,54 +86,54 @@ html, body{
 /**************************************************************************/
 
 .popover-header {
-    font-weight: bold;
-    text-transform: uppercase;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .btn-voltar-glosario {
-    width: 100%;
-    max-width: 150px;
-    top: 10px;
-    right: 10px;
+  width: 100%;
+  max-width: 150px;
+  top: 10px;
+  right: 10px;
 }
 
 .btn-ampliar {
-    transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .btn-ampliar:hover {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .numero {
-    background-color: white;
-    border: none;
-    border-radius: 50%;
-    color: #415583;
-    font-size: 20px;
-    font-weight: bold;
-    width: 30px;
-    height: 30px;
-    box-shadow: -5px 2px 6px -1px rgb(0, 0, 9);
-    padding: 0;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  color: #415583;
+  font-size: 20px;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  box-shadow: -5px 2px 6px -1px rgb(0, 0, 9);
+  padding: 0;
 }
 
 .botao-animado {
-    animation: pulse 1s infinite;
+  animation: pulse 1s infinite;
 }
 
 @keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+  }
 
-    50% {
-        transform: scale(1.1);
-    }
+  50% {
+    transform: scale(1.1);
+  }
 
-    100% {
-        transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /**************************************************************************/
@@ -142,212 +141,214 @@ html, body{
 /************************************************************************/
 
 .p-paisagem {
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
 }
 
 .img-paisagem {
-    max-width: 70% !important;
-    height: auto;
-    display: block;
+  max-width: 70% !important;
+  height: auto;
+  display: block;
 }
 
 @media only screen and (orientation: portrait) {
-    .modo-smart {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        margin: auto;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #7c88e7;
-        z-index: 9999999999999999999;
-    }
+  .modo-smart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #7c88e7;
+    z-index: 9999999999999999999;
+  }
 }
 
 @media (max-width: 991px) {
-    .btn-voltar-glosario {
-        max-width: 200px;
-        top: 5px;
-        right: 5px;
-    }
-    .numero {
-        font-size: 30px;
-        width: 70px;
-        height: 70px;
-    }
-    .btn-menu > img,
-    .btn-voltar-glosario > img {
-        width: 200px !important;
-    }
-
+  .btn-voltar-glosario {
+    max-width: 200px;
+    top: 5px;
+    right: 5px;
+  }
+  .numero {
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+  }
+  .btn-menu > img,
+  .btn-voltar-glosario > img {
+    width: 200px !important;
+  }
 }
 
 @media (min-width: 480px) {
-    .modo-smart {
-        display: none;
-    }
+  .modo-smart {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
-    
 }
-body{
-    overflow: hidden;
-    background-color: #333 !important;
-    position: relative;
+body {
+  overflow: hidden;
+  background-color: #333 !important;
+  position: relative;
 }
-.conteudo-glossario{
-    width: 1920px;
-    height: 1080px;
-    position: fixed;
-    left: calc(50% - 1920px / 2);
-    top: calc(50% - 1080px / 2);
-    margin: auto;
+.conteudo-glossario {
+  width: 1920px;
+  height: 1080px;
+  position: fixed;
+  left: calc(50% - 1920px / 2);
+  top: calc(50% - 1080px / 2);
+  margin: auto;
 }
 #quadrante-02 {
-    background: url(../Img/quadrante_02.png) top left / 1920px 1080px no-repeat;
+  background: url(../Img/quadrante_02.png) top left / 1920px 1080px no-repeat;
 }
 #bg-glossario {
-    background: url(../Img/bg-glossario.png) top left / 1920px 1080px no-repeat;
+  background: url(../Img/bg-glossario.png) top left / 1920px 1080px no-repeat;
 }
 
-#quadrante-01, #quadrante-02, #quadrante-03, #quadrante-04, #bg-glossario{
-    width: 1920px;
-    height: 1080px;
+#quadrante-01,
+#quadrante-02,
+#quadrante-03,
+#quadrante-04,
+#bg-glossario {
+  width: 1920px;
+  height: 1080px;
 }
 /****************************************************************************************/
 /***************************** Posição números quadrante 1 *****************************/
 /**************************************************************************************/
 
 #palavra-01 {
-    left: 32.5%;
-    top: 11.7%;
+  left: 32.5%;
+  top: 11.7%;
 }
 
 #palavra-02 {
-    left: 15.1%;
-    top: 24.6%;
+  left: 15.1%;
+  top: 24.6%;
 }
 
 #palavra-03 {
-    left: 4.3%;
-    top: 9.01%;
+  left: 4.3%;
+  top: 9.01%;
 }
 
 #palavra-04 {
-    left: 50.5%;
-    top: 33.6%;
+  left: 50.5%;
+  top: 33.6%;
 }
 
 #palavra-05 {
-    left: 35.6%;
-    top: 25.3%;
+  left: 35.6%;
+  top: 25.3%;
 }
 
 #palavra-06 {
-    top: 8%;
-    left: 41.5%;
+  top: 8%;
+  left: 41.5%;
 }
 
 #palavra-07 {
-    left: 61.8%;
-    top: 74.6%;
+  left: 61.8%;
+  top: 74.6%;
 }
 
 #palavra-08 {
-    left: 70%;
-    top: 67.2%;
+  left: 70%;
+  top: 67.2%;
 }
 
 #palavra-10 {
-    left: 25.8%;
-    top: 32.8%;
+  left: 25.8%;
+  top: 32.8%;
 }
 
 #palavra-12 {
-    left: 15.4%;
-    top: 51.7%;
+  left: 15.4%;
+  top: 51.7%;
 }
 
 #palavra-14 {
-    left: 8.8%;
-    top: 42.2%;
+  left: 8.8%;
+  top: 42.2%;
 }
 
 #palavra-17 {
-    left: 27.8%;
-    top: 23.6%;
+  left: 27.8%;
+  top: 23.6%;
 }
 
 #palavra-19 {
-    left: 87.5%;
-    top: 86.4%;
+  left: 87.5%;
+  top: 86.4%;
 }
 
 #palavra-22 {
-    left: 21.2%;
-    top: 72.7%;
+  left: 21.2%;
+  top: 72.7%;
 }
 
 #palavra-23 {
-    left: 2%;
-    top: 61.9%;
+  left: 2%;
+  top: 61.9%;
 }
 
 #palavra-24 {
-    left: 73.7%;
-    top: 7.9%;
+  left: 73.7%;
+  top: 7.9%;
 }
 
 #palavra-27 {
-    left: 90.8%;
-    top: 7.5%;
+  left: 90.8%;
+  top: 7.5%;
 }
 
 #palavra-32 {
-    left: 88.3%;
-    top: 24.3%;
+  left: 88.3%;
+  top: 24.3%;
 }
 
 #palavra-34 {
-    left: 69.2%;
-    top: 82.8%;
+  left: 69.2%;
+  top: 82.8%;
 }
 
 #palavra-35 {
-    left: 75.2%;
-    top: 77.0%;
+  left: 75.2%;
+  top: 77%;
 }
 
 #palavra-43 {
-    left: 84.2%;
-    top: 56.1%;
+  left: 84.2%;
+  top: 56.1%;
 }
 
 #palavra-45 {
-    left: 53.9%;
-    top: 64.7%;
+  left: 53.9%;
+  top: 64.7%;
 }
 
 #palavra-55 {
-    left: 30.2%;
-    top: 84.0%;
+  left: 30.2%;
+  top: 84%;
 }
 
 #palavra-57 {
-    left: 3.4%;
-    top: 92.1%;
+  left: 3.4%;
+  top: 92.1%;
 }
 
 #palavra-60 {
-    left: 37.8%;
-    top: 41.5%;
+  left: 37.8%;
+  top: 41.5%;
 }
 
 /****************************************************************************************/
@@ -355,93 +356,93 @@ body{
 /**************************************************************************************/
 
 #palavra-09 {
-    left: 91.1%;
-    top: 22.7%;
+  left: 91.1%;
+  top: 22.7%;
 }
 
 #palavra-11 {
-    left: 86.6%;
-    top: 37.3%;
+  left: 86.6%;
+  top: 37.3%;
 }
 
 #palavra-15 {
-    left: 81.9%;
-    top: 44.6%;
+  left: 81.9%;
+  top: 44.6%;
 }
 
 #palavra-16 {
-    left: 34.4%;
-    top: 7.5%;
+  left: 34.4%;
+  top: 7.5%;
 }
 
 #palavra-18 {
-    left: 50.8%;
-    top: 54%;
+  left: 50.8%;
+  top: 54%;
 }
 
 #palavra-25 {
-    left: 73.2%;
-    top: 45.2%;
+  left: 73.2%;
+  top: 45.2%;
 }
 
 #palavra-26 {
-    left: 36.8%;
-    top: 74.5%;
+  left: 36.8%;
+  top: 74.5%;
 }
 
 #palavra-28 {
-    left: 7.8%;
-    top: 19.0%;
+  left: 7.8%;
+  top: 19%;
 }
 
 #palavra-37 {
-    left: 7.7%;
-    top: 84%;
+  left: 7.7%;
+  top: 84%;
 }
 
 #palavra-38 {
-    left: 14.2%;
-    top: 80.3%;
+  left: 14.2%;
+  top: 80.3%;
 }
 
 #palavra-39 {
-    left: 54.1%;
-    top: 36.9%;
+  left: 54.1%;
+  top: 36.9%;
 }
 
 #palavra-40 {
-    left: 44.8%;
-    top: 40.1%;
+  left: 44.8%;
+  top: 40.1%;
 }
 
 #palavra-46 {
-    left: 74.5%;
-    top: 73.5%;
+  left: 74.5%;
+  top: 73.5%;
 }
 
 #palavra-52 {
-    left: 59.1%;
-    top: 49.9%;
+  left: 59.1%;
+  top: 49.9%;
 }
 
 #palavra-54 {
-    left: 50.3%;
-    top: 84.7%;
+  left: 50.3%;
+  top: 84.7%;
 }
 
 #palavra-56 {
-    left: 34%;
-    top: 20%;
+  left: 34%;
+  top: 20%;
 }
 
 #palavra-58 {
-    left: 70.3%;
-    top: 10.9%;
+  left: 70.3%;
+  top: 10.9%;
 }
 
 #palavra-61 {
-    left: 37.5%;
-    top: 37.2%;
+  left: 37.5%;
+  top: 37.2%;
 }
 
 /****************************************************************************************/
@@ -449,73 +450,73 @@ body{
 /**************************************************************************************/
 
 #palavra-13 {
-    left: 38.5%;
-    top: 36.23%;
+  left: 38.5%;
+  top: 36.23%;
 }
 
 #palavra-20 {
-    left: 52.9%;
-    top: 67.1%;
+  left: 52.9%;
+  top: 67.1%;
 }
 
 #palavra-21 {
-    left: 75.9%;
-    top: 42.0%;
+  left: 75.9%;
+  top: 42%;
 }
 
 #palavra-29 {
-    left: 67.0%;
-    top: 54.6%;
+  left: 67%;
+  top: 54.6%;
 }
 
 #palavra-30 {
-    left: 34.1%;
-    top: 42.4%;
+  left: 34.1%;
+  top: 42.4%;
 }
 
 #palavra-31 {
-    left: 59.2%;
-    top: 77.4%;
+  left: 59.2%;
+  top: 77.4%;
 }
 
 #palavra-36 {
-    left: 96.4%;
-    top: 69.62%;
+  left: 96.4%;
+  top: 69.62%;
 }
 
 #palavra-41 {
-    left: 16.00%;
-    top: 44.07%;
+  left: 16%;
+  top: 44.07%;
 }
 
 #palavra-42 {
-    left: 76.7%;
-    top: 11.6%;
+  left: 76.7%;
+  top: 11.6%;
 }
 
 #palavra-44 {
-    left: 43%;
-    top: 78.2%;
+  left: 43%;
+  top: 78.2%;
 }
 
 #palavra-47 {
-    left: 13.7%;
-    top: 63.6%;
+  left: 13.7%;
+  top: 63.6%;
 }
 
 #palavra-51 {
-    left: 32.5%;
-    top: 60.2%;
+  left: 32.5%;
+  top: 60.2%;
 }
 
 #palavra-59 {
-    left: 43.5%;
-    top: 50.4%;
+  left: 43.5%;
+  top: 50.4%;
 }
 
 #palavra-62 {
-    left: 42.19%;
-    top: 66.39%;
+  left: 42.19%;
+  top: 66.39%;
 }
 
 /****************************************************************************************/
@@ -523,41 +524,41 @@ body{
 /**************************************************************************************/
 
 #palavra-33 {
-    left: 87.3%;
-    top: 56.8%;
+  left: 87.3%;
+  top: 56.8%;
 }
 
 #palavra-48 {
-    left: 8.89%;
-    top: 70.31%;
+  left: 8.89%;
+  top: 70.31%;
 }
 
 #palavra-49 {
-    left: 42.9%;
-    top: 63.4%;
+  left: 42.9%;
+  top: 63.4%;
 }
 
 #palavra-53 {
-    left: 42.22%;
-    top: 90.2%;
+  left: 42.22%;
+  top: 90.2%;
 }
 
 #palavra-63 {
-    left: 59.0%;
-    top: 58.1%;
+  left: 59%;
+  top: 58.1%;
 }
 
 #palavra-64 {
-    left: 79.1%;
-    top: 73.0%;
+  left: 79.1%;
+  top: 73%;
 }
 
 #palavra-65 {
-    left: 58.1%;
-    top: 76.0%;
+  left: 58.1%;
+  top: 76%;
 }
 
 #palavra-50 {
-    left: 78.5%;
-    top: 31.8%;
+  left: 78.5%;
+  top: 31.8%;
 }
