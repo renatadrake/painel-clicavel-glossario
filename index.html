@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/estilo.glossario.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Glossário</title>
+</head>
+<body class="body-glossario">
+  <div class="position-absolute text-center capa">
+      <img src="assets/img/bg-glossario.png" class="img-capa" alt="Backgroud pagina inicial, elementos da produção cultural">
+      <div class="modal fade" id="modal-capa-glossario" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="false">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <p class="p-capa">Olá, estudante! <br> Bem-vindo ao glossário de termos do nosso conteúdo de produção cultural. Aqui, você verá os mais usados e importantes termos, nomes e nomenclaturas utilizados no mundo do trabalho em produção cultural. Bons estudos!</p>
+              <button type="button" class="btn btn-lg btn-capa">
+                Iniciar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="modalMenu" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header menuzinho">
+          <h5 class="modal-title" >Clique em uma opção</h5>
+          <button type="button" id="fechar-menu" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-01" id="li-01">01 - Cenário</a>
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-02" id="li-02">02 - Ciclorama</a>
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-03" id="li-03">03 - Figurino</a>
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-04" id="li-04">04 - Iluminação cênica</a>
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-05" id="li-05">05 - Linóleo</a>
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-06" id="li-06">06 - Máquina de fumaça</a>
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-07" id="li-07">07 - Mesa de luz</a>
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-08" id="li-08">08 - Mesa de som</a>
+            <a href="#" class="btn estilo-menu clicavel-02 mb-1 form-control" data-palavra="#palavra-09" id="li-09">09 - PA</a>
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-10" id="li-10">10 - Praticável</a>
+            <a href="#" class="btn estilo-menu clicavel-02 mb-1 form-control" data-palavra="#palavra-11" id="li-11">11 - Projetor</a>
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-12" id="li-12">12 - Q30</a>
+            <a href="#" class="btn estilo-menu clicavel-03 mb-1 form-control" data-palavra="#palavra-13" id="li-13">13 - Refletores</a>
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-14" id="li-14">14 - Retorno</a>
+            <a href="#" class="btn estilo-menu clicavel-02 mb-1 form-control" data-palavra="#palavra-15" id="li-15">15 - Rider técnico</a>
+            <a href="#" class="btn estilo-menu clicavel-02 mb-1 form-control" data-palavra="#palavra-16" id="li-16">16 - Vara de Luz</a>
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-17" id="li-17">17 - Atores</a>
+            <a href="#" class="btn estilo-menu clicavel-02 mb-1 form-control" data-palavra="#palavra-18" id="li-18">18 - Bailarinos</a>
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-19" id="li-19">19 - Bilheteiro</a>
+            <a href="#" class="btn estilo-menu clicavel-03 mb-1 form-control" data-palavra="#palavra-20" id="li-20">20 - Cantores</a>
+            <a href="#" class="btn estilo-menu clicavel-03 mb-1 form-control" data-palavra="#palavra-21" id="li-21">21 - Carregador</a>
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-22" id="li-22">22 - Cenógrafo</a>
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-23" id="li-23">23 - Cenotécnico</a>
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-24" id="li-24">24 - Contrarregra</a>
+            <a href="#" class="btn estilo-menu clicavel-02 mb-1 form-control" data-palavra="#palavra-25" id="li-25">25 - Coreógrafo</a>
+            <a href="#" class="btn estilo-menu clicavel-02 mb-1 form-control" data-palavra="#palavra-26" id="li-26">26 - Diretor de cena</a>
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-27" id="li-27">27 - Dramaturgo</a>
+            <a href="#" class="btn estilo-menu clicavel-02 mb-1 form-control" data-palavra="#palavra-28" id="li-28">28 - Figurinista</a>
+            <a href="#" class="btn estilo-menu clicavel-03 mb-1 form-control" data-palavra="#palavra-29" id="li-29">29 - Fotógrafo</a>
+            <a href="#" class="btn estilo-menu clicavel-03 mb-1 form-control" data-palavra="#palavra-30" id="li-30">30 - Iluminador</a>
+            <a href="#" class="btn estilo-menu clicavel-03 mb-1 form-control" data-palavra="#palavra-31" id="li-31">31 - Músicos</a>
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-32" id="li-32">32 - Maquiador</a>
+            <a href="#" class="btn estilo-menu clicavel-04 mb-1 form-control" data-palavra="#palavra-33" id="li-33">33 - Montadores</a>
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-34" id="li-34">34 - Operador de luz</a>
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-35" id="li-35">35 - Operador de som</a>
+            <a href="#" class="btn estilo-menu clicavel-03 mb-1 form-control" data-palavra="#palavra-36" id="li-36">36 - Operador de câmera</a>
+            <a href="#" class="btn estilo-menu clicavel-02 mb-1 form-control" data-palavra="#palavra-37" id="li-37">37 - Produtor</a>
+            <a href="#" class="btn estilo-menu clicavel-02 mb-1 form-control" data-palavra="#palavra-38" id="li-38">38 - Produtor de elenco</a>
+            <a href="#" class="btn estilo-menu clicavel-02 mb-1 form-control" data-palavra="#palavra-39" id="li-39">39 - Produtor de objetos</a>
+            <a href="#" class="btn estilo-menu clicavel-02 mb-1 form-control" data-palavra="#palavra-40" id="li-40">40 - Produtor de palco</a>
+            <a href="#" class="btn estilo-menu clicavel-03 mb-1 form-control" data-palavra="#palavra-41" id="li-41">41 - Produtor executivo</a>
+            <a href="#" class="btn estilo-menu clicavel-03 mb-1 form-control" data-palavra="#palavra-42" id="li-42">42 - Roadie</a>
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-43" id="li-43">43 - Diretor de produção</a>
+            <a href="#" class="btn estilo-menu clicavel-03 mb-1 form-control" data-palavra="#palavra-44" id="li-44">44 - Anfiteatro</a>
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-45" id="li-45">45 - Auditório</a>
+            <a href="#" class="btn estilo-menu clicavel-02 mb-1 form-control" data-palavra="#palavra-46" id="li-46">46 - Sala de cinema</a>
+            <a href="#" class="btn estilo-menu clicavel-03 mb-1 form-control" data-palavra="#palavra-47" id="li-47">47 - Espaço aberto</a>
+            <a href="#" class="btn estilo-menu clicavel-04 mb-1 form-control" data-palavra="#palavra-48" id="li-48">48 - Estádio</a>
+            <a href="#" class="btn estilo-menu clicavel-04 mb-1 form-control" data-palavra="#palavra-49" id="li-49">49 - Galeria</a>
+            <a href="#" class="btn estilo-menu clicavel-04 mb-1 form-control" data-palavra="#palavra-50" id="li-50">50 - Fornecedores de estruturas</a>
+            <a href="#" class="btn estilo-menu clicavel-03 mb-1 form-control" data-palavra="#palavra-51" id="li-51">51 - Arquibancada</a>
+            <a href="#" class="btn estilo-menu clicavel-02 mb-1 form-control" data-palavra="#palavra-52" id="li-52">52 - Palco italiano</a>
+            <a href="#" class="btn estilo-menu clicavel-04 mb-1 form-control" data-palavra="#palavra-53" id="li-53">53 - Sala multiuso</a>
+            <a href="#" class="btn estilo-menu clicavel-02 mb-1 form-control" data-palavra="#palavra-54" id="li-54">54 - Salão de eventos</a>
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-55" id="li-55">55 - Teatro</a>
+            <a href="#" class="btn estilo-menu clicavel-02 mb-1 form-control" data-palavra="#palavra-56" id="li-56">56 - Bambolina</a>
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-57" id="li-57">57 - Foyer</a>
+            <a href="#" class="btn estilo-menu clicavel-02 mb-1 form-control" data-palavra="#palavra-58" id="li-58">58 - Pernas</a>
+            <a href="#" class="btn estilo-menu clicavel-03 mb-1 form-control" data-palavra="#palavra-59" id="li-59">59 - Plateia</a>
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-60" id="li-60">60 - Proscênio</a>
+            <a href="#" class="btn estilo-menu clicavel-02 mb-1 form-control" data-palavra="#palavra-61" id="li-61">61 - Rotunda</a>
+            <a href="#" class="btn estilo-menu clicavel-03 mb-1 form-control" data-palavra="#palavra-62" id="li-62">62 - Teatro de arena</a>
+            <a href="#" class="btn estilo-menu clicavel-04 mb-1 form-control" data-palavra="#palavra-63" id="li-63">63 - Fornecedores de camarim</a>
+            <a href="#" class="btn estilo-menu clicavel-01 mb-1 form-control" data-palavra="#palavra-64" id="li-64">64 - Fornecedores de equipamentos audiovisuais</a>
+            <a href="#" class="btn estilo-menu clicavel-04 mb-1 form-control" data-palavra="#palavra-65" id="li-65">65 - Fornecedores de equipamentos e materiais de som e luz</a>
+
+        </div>
+        </div>
+      </div>
+  </div>
+
+
+  <div class="conteudo-glossario">
+    <section class="glossario-responsivo position-absolute tela-inicial-glossario" id="bg-glossario">
+      <button type="button" class="btn-menu sem-fundo position-absolute botao-animado" data-bs-toggle="modal" data-bs-target="#modalMenu">
+        <img class="img-fluid" src="assets/img/Botao_MENU.png" alt="Botão para procurar por número">
+      </button>
+      <div> 
+        <button type="button" class="position-absolute lupa1 sem-fundo botao-animado">
+          <img src="assets/img/Lupa.png" class="img-fluid" alt="Lupa para abrir a tela">
+        </button>
+        <button type="button" class=" position-absolute lupa2 sem-fundo botao-animado">
+          <img src="assets/img/Lupa.png" class="img-fluid" alt="Lupa para abrir a tela">
+        </button>
+        <button type="button" class=" position-absolute lupa3 sem-fundo botao-animado">
+          <img src="assets/img/Lupa.png" class="img-fluid" alt="Lupa para abrir a tela">
+        </button>
+        <button type="button" class=" position-absolute lupa4 sem-fundo botao-animado">
+          <img src="assets/img/Lupa.png" class="img-fluid" alt="Lupa para abrir a tela">
+        </button>
+      </div>
+    </section>
+    <section class="glossario-responsivo position-absolute" id="quadrante-01">
+      <div><img src="assets/img/quadrante_01.png" class="img-fluid" alt="Zoom no backgroud inicial quadrante 01"></div>
+      <div> 
+        <button class="btn-voltar-glosario sem-fundo position-absolute botao-animado"><img class="img-fluid" src="assets/img/Botao_Voltar.png" alt="Botão para voltar na tela inicial"></button>
+        <button type="button" class="btn-menu sem-fundo position-absolute botao-animado" data-bs-toggle="modal" data-bs-target="#modalMenu">
+          <img class="img-fluid" src="assets/img/Botao_MENU.png" alt="Botão para procurar por número">
+        </button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-01" data-bs-toggle="popover" data-bs-title="Cenário" data-bs-content="Conjunto de elementos que compõem o espaço onde se apresenta um espetáculo.">01</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-02" data-bs-toggle="popover" data-bs-title="Ciclorama" data-bs-content='Cortina esticada, semelhante a uma tela, que se estende pelo fundo do palco com armação em forma de "U" aberto e que é colocada ao fundo do palco. Pode ser branco, pérola, cinza ou azul-claro.'>02</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-03" data-bs-toggle="popover" data-bs-title="Figurino" data-bs-content="Conjunto de vestimentas e seus acessórios, usados pelos atores em cena.">03</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-04" data-bs-toggle="popover" data-bs-title="Iluminação cênica" data-bs-content="Tem três funções: iluminação dos personagens em ação, iluminação dos ambientes criados pela cenografia e efeitos luminosos em geral.">04</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-05" data-bs-toggle="popover" data-bs-title="Linóleo" data-bs-content="Tapete de borracha especial colocado como forração do piso do palco, com função de proteção e/ou acabamento. Também serve para amortecer o impacto dos movimentos, sendo muito utilizado em espetáculos de dança.">05</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-06" data-bs-toggle="popover" data-bs-title="Máquina de fumaça (fog)" data-bs-content="Equipamento que produz efeito de neblina.">06</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-07" data-bs-toggle="popover" data-bs-title="Mesa de luz" data-bs-content="Mesa de operações da luz. É o ponto de chegada dos circuitos provenientes dos projetores, passando através dos dimmers. Funciona por meio de resistências elétricas e atualmente é computadorizada, dispondo, portanto, de memória e possibilitando a visualização dos diversos circuitos por meio de um monitor.">07</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-08" data-bs-toggle="popover" data-bs-title="Mesa de som" data-bs-content="Dispositivo eletrônico usado para operar o som.">08</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-10" data-bs-toggle="popover" data-bs-title="Praticável" data-bs-content="Estrutura, usualmente em madeira, com tampo firme, usada nas composições dos níveis dos cenários. É construído em diversas dimensões e formatos e é normalmente modulado para facilitar as composições.">10</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-12" data-bs-toggle="popover" data-bs-title="Q30" data-bs-content="Estrutura de alumínio, de diversos tamanhos, usada normalmente para prender equipamentos de luz e som sobre o palco. ">12</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-14" data-bs-toggle="popover" data-bs-title="Retorno" data-bs-content="Caixa de som situada dentro do backstage, virada para o palco, que serve para que os artistas tenham noção dos sons que vão para a plateia.">14</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-17" data-bs-toggle="popover" data-bs-title="Atores" data-bs-content="São aqueles que atuam profissionalmente.">17</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-19" data-bs-toggle="popover" data-bs-title="Bilheteiro" data-bs-content="É aquele que vende ingressos na bilheteria do evento: teatro, casa de show, ginásio etc.">19</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-22" data-bs-toggle="popover" data-bs-title="Cenógrafo" data-bs-content="É o indivíduo que elabora o projeto cenográfico de espetáculos, shows, filmes.">22</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-23" data-bs-toggle="popover" data-bs-title="Cenotécnico" data-bs-content="É aquele que executa e coordena projetos fornecidos pelo cenógrafo.">23</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-24" data-bs-toggle="popover" data-bs-title="Contrarregra" data-bs-content="É aquele que presta apoio à produção na montagem e desmontagem de cenários e na mudança de figurino, de adereços e de cenário de espetáculos.">24</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-27" data-bs-toggle="popover" data-bs-title="Dramaturgo" data-bs-content="É quem cria textos com o objetivo de transportá-lo para a cena.">27</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-32" data-bs-toggle="popover" data-bs-title="Maquiador" data-bs-content="É o profissional que realiza maquiagens com base na concepção da obra.">32</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-34" data-bs-toggle="popover" data-bs-title="Operador de luz" data-bs-content="É quem opera os controles de iluminação e executa o roteiro de iluminação.">34</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-35" data-bs-toggle="popover" data-bs-title="Operador de som" data-bs-content="É o responsável pela operação de um equipamento de som.">35</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-43" data-bs-toggle="popover" data-bs-title="Diretor de produção" data-bs-content="É a pessoa que coordena as equipes técnica e artística, analisa e planeja as necessidades da montagem, controla o andamento da produção e estipula tarefas e prazos.">43</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-45" data-bs-toggle="popover" data-bs-title="Auditório" data-bs-content="Espaço fechado que abriga diversos eventos.">45</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-55" data-bs-toggle="popover" data-bs-title="Teatro (espaço)" data-bs-content="Espaço onde se realizam apresentações, comumente, no Brasil, em formato de palco italiano.">55</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-57" data-bs-toggle="popover" data-bs-title="Foyer" data-bs-content="Saguão dos teatros.">57</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-60" data-bs-toggle="popover" data-bs-title="Proscênio" data-bs-content="Parte do palco que avança além da boca de cena.">60</button>
+      </div>
+    </section>
+    <section class="glossario-responsivo position-absolute" id="quadrante-02">
+      <div> 
+        <button class="btn-voltar-glosario sem-fundo position-absolute botao-animado"><img class="img-fluid" src="assets/img/Botao_Voltar.png" alt="Botão para voltar na tela inicial"></button>
+        <button type="button" class="btn-menu sem-fundo position-absolute botao-animado" data-bs-toggle="modal" data-bs-target="#modalMenu">
+          <img class="img-fluid" src="assets/img/Botao_MENU.png" alt="Botão para voltar na tela inicial">
+        </button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-09" data-bs-toggle="popover" data-bs-title="PA" data-bs-content="Caixa amplificadora de som que fica virada para a plateia.">09</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-11" data-bs-toggle="popover" data-bs-title="Projetor" data-bs-content="Aparelho eletrônico de iluminação, lentes e refletores que projetam imagens.">11</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-15" data-bs-toggle="popover" data-bs-title="Rider técnico" data-bs-content="Lista de equipamentos e solicitações que serão utilizados em um espetáculo.">15</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-16" data-bs-toggle="popover" data-bs-title="Vara de Luz" data-bs-content="Estrutura onde os equipamentos de luz são dispostos.">16</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-18" data-bs-toggle="popover" data-bs-title="Bailarinos" data-bs-content="São aqueles que dançam profissionalmente.">18</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-25" data-bs-toggle="popover" data-bs-title="Coreógrafo" data-bs-content="É aquele que cria sequências coreográficas e/ou movimentações cênicas.">25</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-26" data-bs-toggle="popover" data-bs-title="Diretor de cena" data-bs-content="É a pessoa responsável pela encenação de teatro, dança, show musical etc.">26</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-28" data-bs-toggle="popover" data-bs-title="Figurinista" data-bs-content="É aquele que idealiza e cria a vestimenta cênica.">28</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-37" data-bs-toggle="popover" data-bs-title="Produtor" data-bs-content="É o responsável pela organização e execução da obra.">37</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-38" data-bs-toggle="popover" data-bs-title="Produtor de elenco" data-bs-content="É aquele que pesquisa, escolhe e recruta os artistas que comporão a obra.">38</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-39" data-bs-toggle="popover" data-bs-title="Produtor de objetos" data-bs-content="É o responsável por planejar, obter e dispor elementos cenográficos em uma obra.">39</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-40" data-bs-toggle="popover" data-bs-title="Produtor de palco" data-bs-content="É o profissional que acompanha e gerencia a montagem e desmontagem de palco e administra os bastidores.">40</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-46" data-bs-toggle="popover" data-bs-title="Sala de cinema" data-bs-content="Qualquer sala onde ocorram projeções de filmes cinematográficos.">46</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-52" data-bs-toggle="popover" data-bs-title="Palco italiano" data-bs-content="Palco retangular, em forma de caixa aberta na parte anterior, situada ao fundo e em plano acima da plateia, provido de moldura (boca de cena), de bastidores laterais, de bambolinas, de cortinas ou panos de boca e, não raro, de um espaço à frente, destinado à orquestra (poço). É o mais conhecido e utilizado dos palcos modernos.">52</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-54" data-bs-toggle="popover" data-bs-title="Salão de eventos" data-bs-content="Sala grande e com pé-direito (medida que vai do chão ao teto) alto, onde se realizam palestras, treinamentos, espetáculos, shows.">54</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-56" data-bs-toggle="popover" data-bs-title="Bambolina" data-bs-content="Faixa de pano instalada horizontalmente no vão superior do palco para completar o contorno do espaço cênico e encobrir os equipamentos suspensos.">56</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-58" data-bs-toggle="popover" data-bs-title="Pernas" data-bs-content="Cortinas pretas verticais que escondem os bastidores do público.">58</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-61" data-bs-toggle="popover" data-bs-title="Rotunda" data-bs-content="Cortina, geralmente de cor preta, que cobre todo o fundo do palco.">61</button>
+      </div>
+    </section>
+    <section class="glossario-responsivo position-absolute" id="quadrante-03">
+      <div><img src="assets/img/quadrante_03.png" class="img-fluid" alt="Zoom no backgroud inicial quadrante 03"></div>
+      <button type="button" class="btn-menu sem-fundo position-absolute botao-animado" data-bs-toggle="modal" data-bs-target="#modalMenu">
+        <img class="img-fluid" src="assets/img/Botao_MENU.png" alt="Botão para voltar na tela inicial">
+      </button>
+      <div> 
+        <button class="btn-voltar-glosario sem-fundo position-absolute botao-animado"><img class="img-fluid" src="assets/img/Botao_Voltar.png" alt="Botão para voltar na tela inicial"></button>
+        <button type="button" class=" estilo-menu sem-fundo position-absolute botao-animado" data-bs-toggle="modal" data-bs-target="#modalMenu">
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-13" data-bs-toggle="popover" data-bs-title="Refletores" data-bs-content="Equipamentos de iluminação cênica, que servem para diferentes funções, como PC.">13</button> 
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-20" data-bs-toggle="popover" data-bs-title="Cantores" data-bs-content="São aqueles que cantam profissionalmente.">20</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-21" data-bs-toggle="popover" data-bs-title="Carregador" data-bs-content="É o profissional responsável pelo deslocamento e realocamento de equipamentos.">21</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-29" data-bs-toggle="popover" data-bs-title="Fotógrafo" data-bs-content="É aquele que cria imagens fotográficas.">29</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-30" data-bs-toggle="popover" data-bs-title="Iluminador" data-bs-content="É o profissional responsável por planejar e operar todo o sistema de iluminação.">30</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-31" data-bs-toggle="popover" data-bs-title="Músicos" data-bs-content="São aqueles que tocam instrumentos musicais profissionalmente.">31</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-36" data-bs-toggle="popover" data-bs-title="Operador de câmera" data-bs-content="É aquele que capta as imagens de acordo com as indicações do realizador ou do diretor.">36</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-41" data-bs-toggle="popover" data-bs-title="Produtor executivo" data-bs-content="É aquele que elabora as estratégias de financiamento, produção e distribuição da obra.">41</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-42" data-bs-toggle="popover" data-bs-title="Roadie" data-bs-content="É o técnico de apoio que viaja com a produção, auxiliando os artistas em diversas frentes.">42</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-44" data-bs-toggle="popover" data-bs-title="Anfiteatro" data-bs-content="Teatro com plateia circular ou semicircular em volta do palco.">44</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-47" data-bs-toggle="popover" data-bs-title="Espaço aberto" data-bs-content="Parte do espaço não ocupada por edifícios, como praças, ruas, pista de aeroporto etc.">47</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-51" data-bs-toggle="popover" data-bs-title="Arquibancada" data-bs-content="Fileiras de assento destinadas ao público.">51</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-59" data-bs-toggle="popover" data-bs-title="Plateia" data-bs-content="Espectadores ou grupo de pessoas reunidas para assistir a qualquer evento ou lugar onde ficam dispostos os assentos para o público.">59</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-62" data-bs-toggle="popover" data-bs-title="Teatro de arena" data-bs-content="Espaço cênico formado por área central de forma circular, onde acontecem espetáculos teatrais. Palco do teatro grego. Área central coberta de areia, nos antigos circos romanos. Arena (picadeiro): o espaço central do circo onde se exibem os artistas da companhia.">62</button>
+      </div> 
+    </section>
+    <section class="glossario-responsivo position-absolute" id="quadrante-04">
+      <div><img src="assets/img/quadrante_04.png" class="img-fluid" alt="Zoom no backgroud inicial quadrante 04"></div>
+      <div> 
+        <button class="btn-voltar-glosario sem-fundo position-absolute botao-animado"><img class="img-fluid" src="assets/img/Botao_Voltar.png" alt="Botão para voltar na tela inicial"></button>
+        <button type="button" class="btn-menu sem-fundo position-absolute botao-animado" data-bs-toggle="modal" data-bs-target="#modalMenu">
+          <img class="img-fluid" src="assets/img/Botao_MENU.png" alt="Botão para voltar na tela inicial">
+        </button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-33" data-bs-toggle="popover" data-bs-title="Montadores" data-bs-content="São aqueles que organizam e ordenam os equipamentos e que viabilizam a montagem dos cenários, da iluminação cênica e da sonorização de espetáculos, performances e shows.">33</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-48" data-bs-toggle="popover" data-bs-title="Estádio" data-bs-content="Construção de grandes dimensões, com bancadas para os espectadores.">48</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-49" data-bs-toggle="popover" data-bs-title="Galeria" data-bs-content="Local que expõe e comercializa obras de arte.">49</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-53" data-bs-toggle="popover" data-bs-title="Sala multiuso" data-bs-content="Sala de apresentações em que se pode modificar o lugar da plateia e o espaço cênico, trocando de posição.">53</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-63" data-bs-toggle="popover" data-bs-title="Fornecedores de camarim" data-bs-content="Empresas ou profissionais especializados em montagem e criação de camarim para eventos.">63</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-64" data-bs-toggle="popover" data-bs-title="Fornecedores de equipamentos audiovisuais" data-bs-content="Empresas ou profissionais especializados na locação e prestação de serviços da área audiovisual, como aluguel de câmeras e tripés, operação de câmera, edição de vídeos etc.">64</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-65" data-bs-toggle="popover" data-bs-title="Fornecedores de equipamentos e materiais de som e luz" data-bs-content="Empresas ou profissionais especializados na locação e prestação de serviços da área de sonorização e iluminação cênica, como aluguel de microfones, caixas de som, mesa de controle, refletores etc.">65</button>
+        <button type="button" class="numero position-absolute btn-ampliar" id="palavra-50" data-bs-toggle="popover" data-bs-title="Fornecedores de estruturas" data-bs-content="Empresas e profissionais especializados na locação de estruturas para eventos, como tendas, Q30, banheiros químicos etc.">50</button>
+      </div>
+    </section>         
+  </div>
+  <div class="modo-smart">
+    <div class="text-center">
+      <p class="p-paisagem text-center"><img src="assets/img/vire.gif" class="img-fluid img-paisagem d-inline-block"><br><strong>Por favor, gire o aparelho para o modo paisagem.</strong></p>
+    </div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="assets/js/script-glossario.js"></script>
+</body>
+</html>
