@@ -26,3 +26,5 @@ Tecnologias Utilizadas
 - JavaScript (jQuery): Lógica de interatividade.
 
 - Bootstrap: Criação de popovers, modais e responsividade.
+
+Desenvolvido com ❤️ por Renata Lima Ferreira
